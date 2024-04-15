@@ -27,9 +27,9 @@ A step-by-step series of examples that tell you how to get a development environ
 
 **1. Clone the repository:**
 
-`git clone https://github.com/yourusername/karr-rental.git`
+`git clone https://github.com/yourusername/KARR.git`
 
-`cd karr-rental`
+`cd KARR`
 
 **2. Import the Database**
 
@@ -49,4 +49,4 @@ Update the database connection settings in server.php if necessary.
 
 If using XAMPP/WAMP, start your Apache server.
 
-Navigate to http://localhost/karr-rental/signup.php to access the application.
+Navigate to http://localhost/KARR/signup.php to access the application.
