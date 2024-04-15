@@ -72,8 +72,8 @@ if (isset($_POST['login'])) {
       if (password_verify($password, $user['Password'])) {
           $_SESSION['email'] = $email;
           $_SESSION['success'] = "You are now logged in";
-          header('location: index.php');
-          exit(); // Ensure script execution ends after a redirect
+          header('Location: index.php');
+          exit();
       } else {
           array_push($errors, "Wrong username/password combination");
       }

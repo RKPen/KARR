@@ -77,7 +77,7 @@
                     <label for="loginPassword">Password:</label>
                     <input type="password" id="loginPassword" name="password" required>
                 </div>
-                <button type="L-submit">Login</button>
+                <button type="L-submit" , name= "login">Login</button>
                 <p class="S-login">Don't have an account? <a href="signup.php">Sign Up</a></p>
             </form>
         </div>
@@ -87,8 +87,7 @@
             <div class="inner">
                 <section>
                     <ul class="icons">
-                        <li><a href="https://twitter.com/KARRrental" class="icon style2 fa-twitter"><span
-                                    class="label">X</span></a></li>
+                        <li><a href="https://twitter.com/KARRrental" class="icon style2 fa-twitter"><span class="label">X</span></a></li>
                         <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
                         <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
                         <li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
