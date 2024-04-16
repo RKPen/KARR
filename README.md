@@ -49,4 +49,4 @@ Update the database connection settings in server.php if necessary.
 
 If using XAMPP/WAMP, start your Apache server.
 
-Navigate to http://localhost/KARR/signup.php to access the application.
+Navigate to http://localhost/KARR/index.php to access the application.

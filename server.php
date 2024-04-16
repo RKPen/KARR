@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <?php
 session_start();
 
@@ -33,13 +34,13 @@ if (isset($_POST['signup'])) {
   $user = $result->fetch_assoc();
 
   if ($user) { // if user exists
-      if ($user['email'] === $email) {
+      if ($user['Email'] === $email) {
           echo "Email already exists.";
           exit;
       }
   } else {
       // If user does not exist, hash the password and insert the new user into the database
-      $hashed_password = password_hash($password_1, PASSWORD_DEFAULT);
+      $hashed_password = password_hash($password_1, PASSWORD_BCRYPT);
       $insert_query = "INSERT INTO customer (Firstname, Lastname, Gender, Age, Email, Password, Phonenumber) VALUES (?, ?, ?, ?, ?, ?, ?)";
       $stmt = $db->prepare($insert_query);
       $stmt->bind_param("sssisss", $firstname, $lastname, $gender, $age, $email, $hashed_password, $phonenumber);
@@ -66,10 +67,15 @@ if (isset($_POST['login'])) {
   $stmt->bind_param("s", $email);
   $stmt->execute();
   $result = $stmt->get_result();
+  $user = $result->fetch_assoc();
+  $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+ 
 
-  if ($user = $result->fetch_assoc()) {
+
+  if ($user['Password']) {
       // Verify the hashed password
-      if (password_verify($password, $user['Password'])) {
+      echo(password_verify($password , $user['Password']));
+      if (password_verify($password , $user['Password'])) {
           $_SESSION['email'] = $email;
           $_SESSION['success'] = "You are now logged in";
           header('Location: index.php');

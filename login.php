@@ -77,7 +77,7 @@
                     <label for="loginPassword">Password:</label>
                     <input type="password" id="loginPassword" name="password" required>
                 </div>
-                <button type="L-submit" , name= "login">Login</button>
+                <button type="submit" , name= "login">Login</button>
                 <p class="S-login">Don't have an account? <a href="signup.php">Sign Up</a></p>
             </form>
         </div>
@@ -88,8 +88,8 @@
                 <section>
                     <ul class="icons">
                         <li><a href="https://twitter.com/KARRrental" class="icon style2 fa-twitter"><span class="label">X</span></a></li>
-                        <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://www.facebook.com/karr.rental" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/karrrental?igsh=eHhkcDVmN25reXNz" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
                         <li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
                     </ul>
 
