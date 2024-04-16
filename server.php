@@ -34,7 +34,7 @@ if (isset($_POST['signup'])) {
   $user = $result->fetch_assoc();
 
   if ($user) { // if user exists
-      if ($user['email'] === $email) {
+      if ($user['Email'] === $email) {
           echo "Email already exists.";
           exit;
       }
