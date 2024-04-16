@@ -77,7 +77,7 @@
                     <label for="loginPassword">Password:</label>
                     <input type="password" id="loginPassword" name="password" required>
                 </div>
-                <button type="L-submit" , name= "login">Login</button>
+                <button type="submit" , name= "login">Login</button>
                 <p class="S-login">Don't have an account? <a href="signup.php">Sign Up</a></p>
             </form>
         </div>

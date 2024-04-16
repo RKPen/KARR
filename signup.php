@@ -131,7 +131,7 @@
                     <input type="password" id="confirmPassword" name="confirmPassword" required>
                 </div>
                 
-                <button type="S-submit", name="signup">Sign Up</button>
+                <button type="submit", name="signup">Sign Up</button>
                 <p class="S-login">Already have an account? <a href="login.php">Login</a></p>
             </form>
         </div>
