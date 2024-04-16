@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (empty($_SESSION['logged_in'])) {
-    header('location: login.php');
-    exit();
-}
 ?>
 <!DOCTYPE HTML>
 <html>
