@@ -1,6 +1,9 @@
 <?php
 session_start();
-
+if (empty($_SESSION['logged_in'])) {
+    header('location: login.php');
+    exit();
+}
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -138,8 +141,8 @@ session_start();
 					<ul class="icons">
 						<li><a href="https://twitter.com/KARRrental" class="icon style2 fa-twitter"><span
 									class="label">X</span></a></li>
-						<li><a href="https://www.facebook.com/karr.rental" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/karrrental?igsh=eHhkcDVmN25reXNz" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					</ul>
 
