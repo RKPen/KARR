@@ -28,7 +28,7 @@ if (empty($_SESSION['logged_in'])) {
 
 				<!-- Logo -->
 				<a href="index.php" class="logo">
-					<span class="fa fa-car"></span> <span class="title">KARR Rental</span>
+					<span class="fa fa-car"></span> <span class="title">KARR Car Rental</span>
 				</a>
 
 				<!-- Nav -->
