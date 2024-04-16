@@ -40,7 +40,7 @@ if (isset($_POST['signup'])) {
       }
   } else {
       // If user does not exist, hash the password and insert the new user into the database
-      $hashed_password = password_hash($password_1, PASSWORD_DEFAULT);
+      $hashed_password = password_hash($password_1, PASSWORD_BCRYPT);
       $insert_query = "INSERT INTO customer (Firstname, Lastname, Gender, Age, Email, Password, Phonenumber) VALUES (?, ?, ?, ?, ?, ?, ?)";
       $stmt = $db->prepare($insert_query);
       $stmt->bind_param("sssisss", $firstname, $lastname, $gender, $age, $email, $hashed_password, $phonenumber);
@@ -67,7 +67,7 @@ if (isset($_POST['login'])) {
   $stmt->bind_param("s", $email);
   $stmt->execute();
   $result = $stmt->get_result();
-
+  $hashed_password = password_hash($password, PASSWORD_BCRYPT);
   if ($user = $result->fetch_assoc()) {
       // Verify the hashed password
       if (password_verify($password, $user['Password'])) {
