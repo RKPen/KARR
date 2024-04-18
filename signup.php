@@ -76,9 +76,17 @@
         </nav>
 
         <!-- Main -->
+       <!-- <div id="main">
+        <form method="post" action="server.php" onsubmit="return validatePassword()">-->
         <div id="main">
-        <form method="post" action="server.php" onsubmit="return validatePassword()">
-  	    <?php include('errors.php'); ?>
+            <?php
+            if(isset($_SESSION['signup_error'])) {
+                echo '<div class="alert alert-danger">'.$_SESSION['signup_error'].'</div>';
+                unset($_SESSION['signup_error']); // clear the error message once displayed
+            }
+            ?>
+            <form method="post" action="server.php" onsubmit="return validatePassword()">
+                <?php include('errors.php'); ?>
                 <h2>Sign Up</h2>
 
                 <!-- First Name -->
