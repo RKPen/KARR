@@ -31,10 +31,11 @@ if (isset($_POST['signup'])) {
   $result = $stmt->get_result();
   $user = $result->fetch_assoc();
 
-  if ($user) { // if user exists
+    if ($user) { // if user exists
       if ($user['Email'] === $email) {
-          echo "Email already exists.";
-          exit;
+        $_SESSION['signup_error'] = "Email already in use";
+        header('Location: signup.php');
+        exit();
       }
   } else {
       // If user does not exist, hash the password and insert the new user into the database
