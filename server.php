@@ -59,28 +59,31 @@ if (isset($_POST['signup'])) {
 
 // LOGIN USER
 if (isset($_POST['login'])) {
-  $email = mysqli_real_escape_string($db, $_POST['email']);
-  $password = mysqli_real_escape_string($db, $_POST['password']);
+    $email = mysqli_real_escape_string($db, $_POST['email']);
+    $password = mysqli_real_escape_string($db, $_POST['password']);
 
-  // Preparing SQL statement
-  $stmt = $db->prepare("SELECT * FROM customer WHERE email=?");
-  $stmt->bind_param("s", $email);
-  $stmt->execute();
-  $result = $stmt->get_result();
-  $hashed_password = password_hash($password, PASSWORD_BCRYPT);
-  if ($user = $result->fetch_assoc()) {
-      // Verify the hashed password
-      if (password_verify($password, $user['Password'])) {
-          $_SESSION['email'] = $email;
-          $_SESSION['success'] = "You are now logged in";
-          header('Location: index.php');
-          exit();
-      } else {
-          array_push($errors, "Wrong username/password combination");
-      }
-  } else {
-      array_push($errors, "Wrong username/password combination");
-  }
+    // Preparing SQL statement
+    $stmt = $db->prepare("SELECT password FROM customer WHERE email=?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows == 1) {
+        // Fetch the hashed password from the result
+        $row = $result->fetch_assoc();
+        $hashed_password = $row['password'];
+        if (password_verify($password, $hashed_password)) {
+            $_SESSION['email'] = $email;
+            $_SESSION['success'] = "You are now logged in";
+            header('Location: index.php');
+            exit();
+        } else {
+            array_push($errors, "Wrong username/password combination");
+        }
+    } else {
+        array_push($errors, "Wrong username/password combination");
+    }
 }
+
 
 ?>
