@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-
 // initializing variables
 $firstname = "";
 $lastname = "";
@@ -57,7 +55,7 @@ if (isset($_POST['signup'])) {
   $stmt->close();
 }
 
-// LOGIN USER
+//LOGIN USER
 if (isset($_POST['login'])) {
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
@@ -78,10 +76,14 @@ if (isset($_POST['login'])) {
             header('Location: index.php');
             exit();
         } else {
-            array_push($errors, "Wrong username/password combination");
+            $_SESSION['login_error'] = "Wrong username/password combination";
+            header('Location: login.php');
+            exit();
         }
     } else {
-        array_push($errors, "Wrong username/password combination");
+        $_SESSION['login_error'] = "Wrong username/password combination";
+        header('Location: login.php');
+        exit();
     }
 }
 

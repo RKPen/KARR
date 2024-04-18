@@ -66,6 +66,12 @@
 
         <!-- Main -->
         <div id="main">
+            <?php
+            if(isset($_SESSION['login_error'])) {
+                echo '<div class="alert alert-danger">'.$_SESSION['login_error'].'</div>';
+                unset($_SESSION['login_error']); // clear the error message once displayed
+            }
+            ?>
             <form method="post" action="server.php">
                 <?php include('errors.php'); ?>
                 <h2>Login</h2>
@@ -77,7 +83,7 @@
                     <label for="loginPassword">Password:</label>
                     <input type="password" id="loginPassword" name="password" required>
                 </div>
-                <button type="L-submit" , name= "login">Login</button>
+                <button type="submit" name="login">Login</button>
                 <p class="S-login">Don't have an account? <a href="signup.php">Sign Up</a></p>
             </form>
         </div>

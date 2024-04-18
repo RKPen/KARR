@@ -88,7 +88,7 @@ CREATE TABLE `customer` (
   `Age` int(11) NOT NULL,
   `Email` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `Phonenumber` varchar(32) NOT NULL,
-  `Password` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `Password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
