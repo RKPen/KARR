@@ -8,6 +8,7 @@ $errors = array();
 
 // connect to the database
 $db = mysqli_connect('localhost', 'u491302118_root', 'Kimo@2001', 'u491302118_car_rental_v2');
+// $db = mysqli_connect('localhost', 'root', '', 'car rental v2', 3308);
 
 // SIGNUP USER
 if (isset($_POST['signup'])) {
