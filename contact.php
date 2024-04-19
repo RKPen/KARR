@@ -1,6 +1,6 @@
 <?php
-session_start();
-
+include 'server.php';
+$isLoggedIn = displayLoginStatus();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -42,9 +42,18 @@ session_start();
 		<nav id="menu">
 			<h2>Menu</h2>
 			<ul>
-				<li><a href="index.php">Home</a></li>
-
-				<li><a href="login.php">Login</a></li>
+				<?php
+            	if ($isLoggedIn) {
+                	// Logged in, display logout button
+					$welcomeMessage = "<span style='font-weight: bold; font-size: larger;'> Signed in !</span>";
+            		echo "<li>$welcomeMessage</li>";
+                	echo "<li><a href='logout.php'>Logout</a></li>";
+            	} else {
+                	// Not logged in, display login/signup links
+                	echo "<li><a href='login.php'>Login</a></li>";
+                	echo "<li><a href='signup.php'>Signup</a></li>";
+            	}
+        		?>
 
 				<li><a href="signup.php">Signup</a></li>
 

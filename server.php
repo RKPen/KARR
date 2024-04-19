@@ -7,8 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'u491302118_root', 'Kimo@2001', 'u491302118_car_rental_v2');
-// $db = mysqli_connect('localhost', 'root', '', 'car rental v2', 3308);
+$db = mysqli_connect('localhost', 'root', '', 'car rental v2', 3308);
 
 // SIGNUP USER
 if (isset($_POST['signup'])) {
@@ -72,8 +71,10 @@ if (isset($_POST['login'])) {
         // Fetch the hashed password from the result
         $row = $result->fetch_assoc();
         $hashed_password = $row['password'];
+        $gender = $row['gender'];
         if (password_verify($password, $hashed_password)) {
             $_SESSION['email'] = $email;
+            $_SESSION['loggedin'] = true;
             $_SESSION['success'] = "You are now logged in";
             header('Location: index.php');
             exit();
@@ -86,6 +87,14 @@ if (isset($_POST['login'])) {
         $_SESSION['login_error'] = "Wrong username/password combination";
         header('Location: login.php');
         exit();
+    }
+}
+
+function displayLoginStatus() {
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+        return true;
+    }else{
+        return false;
     }
 }
 

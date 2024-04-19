@@ -1,12 +1,6 @@
 <?php
-session_start();
-
-// Check if user is not logged in
-if (!isset($_SESSION['email'])) {
-    // Redirect to the login page
-    header('Location: login.php');
-    exit();
-}
+include 'server.php';
+$isLoggedIn = displayLoginStatus();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -50,9 +44,18 @@ if (!isset($_SESSION['email'])) {
 			<ul>
 				<li><a href="index.php">Home</a></li>
 
-				<li><a href="login.php">Login</a></li>
-
-				<li><a href="signup.php">Signup</a></li>
+				<?php
+            	if ($isLoggedIn) {
+					$welcomeMessage = "<span style='font-weight: bold; font-size: larger;'> Signed in !</span>";
+            		echo "<li>$welcomeMessage</li>";
+                	// Logged in, display logout button
+                	echo "<li><a href='logout.php'>Logout</a></li>";
+            	} else {
+                	// Not logged in, display login/signup links
+                	echo "<li><a href='login.php'>Login</a></li>";
+                	echo "<li><a href='signup.php'>Signup</a></li>";
+            	}
+        		?>
 
 				<li><a href="offers.php">Offers</a></li>
 
