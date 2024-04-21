@@ -113,9 +113,9 @@ $isLoggedIn = displayLoginStatus();
 						</div>
 
 						<div class="col-sm-3 text-center">
-							<img src="images/author-image-3-646x680.jpg" class="img-fluid" alt="" />
+							<img src="images/riad2.jpg" class="img-fluid" alt="" />
 
-							<h2 class="m-n">Riad Zayla</h2>
+							<h2 class="m-n">Riad El Zaylaa</h2>
 
 							<p>
 								<br>
