@@ -98,23 +98,23 @@ if (!isset($_SESSION['email'])) {
                     while ($booking_row = $booking_result->fetch_assoc()) {
                         ?>
                         <div class="receipt">
-                    <h2>Booking Information</h2>
-                    <p>Name: <?php echo $booking_row['Name']; ?></p>
-                    <p>Brand: <?php echo $booking_row['Brand']; ?></p>
-                    <p>From Date: <?php echo $booking_row['FromDate']; ?></p>
-                    <p>To Date: <?php echo $booking_row['ToDate']; ?></p>
-                    <p>Duration: <?php echo $booking_row['Duration']; ?> Days</p>
-                    <p>Comment: <?php echo $booking_row['Comment']; ?></p>
+                            <h2>Booking Information</h2>
+                            <p>Name: <?php echo $booking_row['Name']; ?></p>
+                            <p>Brand: <?php echo $booking_row['Brand']; ?></p>
+                            <p>From Date: <?php echo $booking_row['FromDate']; ?></p>
+                            <p>To Date: <?php echo $booking_row['ToDate']; ?></p>
+                            <p>Duration: <?php echo $booking_row['Duration']; ?> Days</p>
+                            <p>Comment: <?php echo $booking_row['Comment']; ?></p>
 
-                    <!-- Add more booking details as needed -->
+                            <!-- Add more booking details as needed -->
                     
-                    <a href="vehicle_details.php?Brand=<?php echo $booking_row['Brand']; ?>">View Vehicle Details</a>
-                    <!-- Add cancel button -->
-                    <?php
-                    echo "<a href='server.php?cancel_booking={$booking_row['BOOK_ID']}' class='button primary'>Cancel Booking</a>";
-                    ?>
+                            <a href="vehicle_details.php?Brand=<?php echo $booking_row['Brand']; ?>">View Vehicle Details</a>
+                            <!-- Add cancel button -->
+                            <?php
+                            echo "<a href='server.php?cancel_booking={$booking_row['BOOK_ID']}' class='button primary'>Cancel Booking</a>";
+                            ?>
                     <!-- Add any other sections or information you want to display -->
-                </div>
+                        </div>
                     <?php
                     }
                 } else {
