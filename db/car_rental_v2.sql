@@ -418,12 +418,12 @@ CREATE TABLE `vehicle` (
 --
 
 INSERT INTO `vehicle` (`Plate_Num`,`Image_Path`,`Price`, `Color`, `Gas_Type`, `Milage`, `Brand`, `Model`, `Type`,`InStock`,  `Year`) VALUES
-(12937,'product-1-720x480.jpg',90,'White', 'Gasoline', 12679, 'Volkswagen', 'Passat', 'Sedan',3, 2022),
-(110621,'product-2-720x480.jpg',150,  'Blue', 'Electric', 12560,  'Tesla', 'Model S', 'Sedan',2, 2018),
-(219057,'product-3-720x480.jpg', 140, 'Grey', 'Gasoline', 79011,  'BMW ', 'X5', 'SUV',3,2018),
-(252904,'product-4-720x480.jpg', 150, 'Silver', 'Gasoline', 20245,  'Mercedes', 'C300', 'Sedan',2,2022),
-(344667, 'product-5-720x480.jpg',100, 'Red', 'Gasoline', 14678, 'Honda', 'CRV', 'SUV',4, 2020),
-(416776,'product-6-720x480.jpg', 80,  'Red', 'Gasoline', 760,  'Kia', 'Rio', 'Hatchback',3, 2022),
+(12937,'vw-720x480.jpg',90,'White', 'Gasoline', 12679, 'Volkswagen', 'Passat', 'Sedan',3, 2022),
+(110621,'tesla-720x480.jpg',150,  'Blue', 'Electric', 12560,  'Tesla', 'Model S', 'Sedan',2, 2018),
+(219057,'bmw-720x480.jpg', 140, 'Grey', 'Gasoline', 79011,  'BMW ', 'X5', 'SUV',3,2018),
+(252904,'mercedes-720x480.jpg', 150, 'Silver', 'Gasoline', 20245,  'Mercedes', 'C300', 'Sedan',2,2022),
+(344667, 'honda-720x480.jpg',100, 'Red', 'Gasoline', 14678, 'Honda', 'CRV', 'SUV',4, 2020),
+(416776,'kia-720x480.jpg', 80,  'Red', 'Gasoline', 760,  'Kia', 'Rio', 'Hatchback',3, 2022),
 (476766,'product-7-720x480.jpg', 170,  'Black', 'Gasoline', 7659,  'LandRover', ' Evoque', 'SUV',2, 2021),
 (564531,'product-8-720x480.jpg', 300,  'Silver', 'Gasoline', 560, 'Porsche', '911', 'Supercar',1, 2019),
 (567821, 'product-9-720x480.jpg',450,  'Black', 'Gasoline', 300,  'Rolls Royce', 'Cullinan', 'Luxury',2,2018);
