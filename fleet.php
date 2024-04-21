@@ -57,7 +57,7 @@ $isLoggedIn = displayLoginStatus();
             	}
         		?>
 
-				<li><a href="offers.php">Offers</a></li>
+				
 
 				<li><a href="fleet.php" class="active">Fleet</a></li>
 
@@ -70,6 +70,7 @@ $isLoggedIn = displayLoginStatus();
 						<li><a href="testimonials.php">Testimonials</a></li>
 						<li><a href="faq.php">FAQ</a></li>
 						<li><a href="terms.php">Terms</a></li>
+						<li><a href="mybooking.php">My Booking</a></li>
 					</ul>
 				</li>
 				<li><a href="contact.php">Contact Us</a></li>
@@ -86,171 +87,345 @@ $isLoggedIn = displayLoginStatus();
 				</div>
 
 				<!-- Fleet -->
+
 				<section class="tiles">
+
 					<article class="style1">
+
 						<span class="image">
+
 							<img src="images/product-1-720x480.jpg" alt="" />
+
 						</span>
+
 						<a href="#footer" class="scrolly">
+
 							<h2>Volkswagen</h2>
+
+
 
 							<p>price from: <strong> $ 90.00</strong> per weekend</p>
 
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
 						</a>
+
 					</article>
+
+
+
 					<article class="style2">
+
 						<span class="image">
+
 							<img src="images/product-2-720x480.jpg" alt="" />
+
 						</span>
+
 						<a href="#footer" class="scrolly">
-							<h2>Chevrolet</h2>
 
-							<p>price from: <strong> $ 100.00</strong> per weekend</p>
+							<h2>Tesla</h2>
 
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
+
+
+							<p>price from: <strong> $ 150.00</strong> per weekend</p>
+
 						</a>
+
 					</article>
+
+
+
 					<article class="style3">
+
 						<span class="image">
+
 							<img src="images/product-3-720x480.jpg" alt="" />
+
 						</span>
+
 						<a href="#footer" class="scrolly">
-							<h2>Renault</h2>
 
-							<p>price from: <strong> $ 110.00</strong> per weekend</p>
-
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
-						</a>
-					</article>
-
-					<article class="style4">
-						<span class="image">
-							<img src="images/product-4-720x480.jpg" alt="" />
-						</span>
-						<a href="#footer" class="scrolly">
-							<h2>Maserati</h2>
-
-							<p>price from: <strong> $ 120.00</strong> per weekend</p>
-
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
-						</a>
-					</article>
-
-					<article class="style5">
-						<span class="image">
-							<img src="images/product-5-720x480.jpg" alt="" />
-						</span>
-						<a href="#footer" class="scrolly">
-							<h2>Fiat</h2>
-
-							<p>price from: <strong> $ 130.00</strong> per weekend</p>
-
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
-						</a>
-					</article>
-
-					<article class="style6">
-						<span class="image">
-							<img src="images/product-6-720x480.jpg" alt="" />
-						</span>
-						<a href="#footer" class="scrolly">
 							<h2>BMW</h2>
+
+
 
 							<p>price from: <strong> $ 140.00</strong> per weekend</p>
 
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
 						</a>
+
 					</article>
+
+
+
+					<article class="style4">
+
+						<span class="image">
+
+							<img src="images/product-4-720x480.jpg" alt="" />
+
+						</span>
+
+						<a href="#footer" class="scrolly">
+
+							<h2>Mercedes</h2>
+
+
+
+							<p>price from: <strong> $ 150.00</strong> per weekend</p>
+
+						</a>
+
+					</article>
+
+
+
+					<article class="style5">
+
+						<span class="image">
+
+							<img src="images/product-5-720x480.jpg" alt="" />
+
+						</span>
+
+						<a href="#footer" class="scrolly">
+
+							<h2>Honda</h2>
+
+
+
+							<p>price from: <strong> $ 100.00</strong> per weekend</p>
+
+						</a>
+
+					</article>
+
+
+
+					<article class="style6">
+
+						<span class="image">
+
+							<img src="images/product-6-720x480.jpg" alt="" />
+
+						</span>
+
+						<a href="#footer" class="scrolly">
+
+							<h2>Kia</h2>
+
+
+
+							<p>price from: <strong> $ 80.00</strong> per weekend</p>
+
+						</a>
+
+					</article>
+
+
+
+					<article class="style7">
+
+						<span class="image">
+
+							<img src="images/product-7-720x480.jpg" alt="" />
+
+						</span>
+
+						<a href="#footer" class="scrolly">
+
+							<h2>Landrover</h2>
+
+
+
+							<p>price from: <strong> $ 170.00</strong> per weekend</p>
+
+						</a>
+
+					</article>
+
+
+
+					<article class="style8">
+
+						<span class="image">
+
+							<img src="images/product-8-720x480.jpg" alt="" />
+
+						</span>
+
+						<a href="#footer" class="scrolly">
+
+							<h2>Porsche</h2>
+
+
+
+							<p>price from: <strong> $ 300.00</strong> per weekend</p>
+
+						</a>
+
+					</article>
+
+
+
+					<article class="style9">
+
+						<span class="image">
+
+							<img src="images/product-9-720x480.jpg" alt="" />
+
+						</span>
+
+						<a href="#footer" class="scrolly">
+
+							<h2>Rolls Royce</h2>
+
+
+
+							<p>price from: <strong> $ 450.00</strong> per weekend</p>
+
+						</a>
+
+					</article>
+
 				</section>
+
 			</div>
+
 		</div>
 
+
+
 		<!-- Footer -->
+
 		<footer id="footer">
+
 			<div class="inner">
-				<section>
+
+			<section>
+
+			<?php
+
+            if(isset($_SESSION['book_error'])) {
+
+                echo '<div class="alert alert-danger">'.$_SESSION['book_error'].'</div>';
+
+                unset($_SESSION['book_error']); // clear the error message once displayed
+
+            }
+
+            ?>
+
+            <form method="post" action="server.php">
+
+                <?php include('errors.php'); ?>
+
 					<h2>Book now</h2>
-					<form method="post" action="#">
+
 						<div class="fields">
-							<div class="field half">
-								<input type="text" name="name" id="name" placeholder="Your Name" />
-							</div>
 
 							<div class="field half">
-								<select name="vehicle-type" id="vehicle-type">
-									<option value="">Volkswagen</option>
-									<option value="">Chevrolet</option>
-									<option value="">Renault</option>
-									<option value="">Maserati</option>
-									<option value="">Fiat</option>
-									<option value="">BMW</option>
-								</select>
+
+								<input type="text" name="name" id="name" placeholder="Your Name" required />
+
 							</div>
 
+
+
 							<div class="field half">
+
+							<select name="vehicle-type" id="vehicle-type">
+
+							<option value="">Select Vehicle</option>
+
+								<?php
+
+								// Assuming $db is a valid MySQLi connection
+
+								$query = "SELECT Brand FROM vehicle";
+
+								$result = mysqli_query($db, $query);
+
+								if ($result) {
+
+									while ($row = mysqli_fetch_assoc($result)) {
+
+										echo "<option value='" . $row['Brand'] . "'>" . $row['Brand'] . "</option>";
+
+									}
+
+									mysqli_free_result($result);
+
+								}
+
+								?>
+
+								
+
+							</select>
+
+
+
+							</div>
+
+
+
+							<div class="field half">
+
 								<input type="datetime-local" name="date-from" id="date-from"
-									placeholder="Pick-up date/time" />
+
+									placeholder="Pick-up date/time" required />
+
 							</div>
 
-							<div class="field half">
-								<input type="datetime-local" name="date-to" id="date-to"
-									placeholder="Return date/tiem" />
-							</div>
+
 
 							<div class="field half">
-								<input type="text" name="email" id="email" placeholder="Email" />
+
+								<input type="datetime-local" name="date-to"  id="date-to" 
+
+									placeholder="Return date/time" required />
+
 							</div>
 
+
+
+
+
 							<div class="field half">
-								<input type="text" name="phone" id="phone" placeholder="Phone" />
+
+								<input type="text" name="phone" id="phone" placeholder="Phone" required />
+
 							</div>
+
+
 
 							<div class="field">
+
 								<textarea name="message" id="message" rows="3" placeholder="Comment"></textarea>
+
 							</div>
 
-							<div class="field text-right">
+
+
+							<?php if($isLoggedIn)
+
+              {?><div class="field text-right">
+
 								<label>&nbsp;</label>
 
-								<ul class="actions">
-									<li><input type="submit" value="Book now" class="primary" /></li>
-								</ul>
-							</div>
+
+
+								<button type="S-submit"  name="book">Book Now</button>
+
+							</div><?php }?>
+
 						</div>
+
 					</form>
+
 				</section>
+
 				<section>
+
 					<h2>Contact Info</h2>
 
 					<ul class="alt">

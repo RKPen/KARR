@@ -56,8 +56,6 @@ $isLoggedIn = displayLoginStatus();
             	}
         		?>
 
-				<li><a href="offers.php">Offers</a></li>
-
 				<li>
 					<a href="#" class="dropdown-toggle">About</a>
 
@@ -68,6 +66,7 @@ $isLoggedIn = displayLoginStatus();
 						<li><a href="faq.php">FAQ</a></li>
 						<li><a href="terms.php">Terms</a></li>
 						<li><a href="fleet.php">Fleet</a></li>
+						<li><a href="mybooking.php">My Booking</a></li>
 					</ul>
 				</li>
 				<li><a href="contact.php">Contact Us</a></li>
@@ -114,64 +113,6 @@ $isLoggedIn = displayLoginStatus();
 						any journey. Drive more, pay less—experience the freedom of the open road without breaking the
 						bank. Book your next adventure today!"</p>
 				</header>
-
-				<br>
-
-				<h2 class="h2">Offers</h2>
-
-				<!-- Offers -->
-				<section class="tiles">
-					<article class="style1">
-						<span class="image">
-							<img src="images/other-1-720x480.jpg" alt="" />
-						</span>
-						<a href="offers.php">
-							<h2>Essential Value</h2>
-
-							<p>price from: <strong> $ 99.99</strong> per weekend</p>
-
-							<div class="content">
-								<p>For our budget-conscious travelers, the Essential Value option provides affordable
-									access to reliable vehicles</p>
-							</div>
-						</a>
-					</article>
-					<article class="style2">
-						<span class="image">
-							<img src="images/other-2-720x480.jpg" alt="" />
-						</span>
-						<a href="offers.php">
-							<h2>Preferred Choice</h2>
-
-							<p>price from: <strong> $ 149.99</strong> per weekend</p>
-
-							<div class="content">
-								<p>Our Preferred Choice selection offers a perfect balance between comfort and value.
-								</p>
-							</div>
-						</a>
-					</article>
-					<article class="style3">
-						<span class="image">
-							<img src="images/product-6-720x480.jpg" alt="" />
-						</span>
-						<a href="offers.php">
-							<h2>Premium Experience</h2>
-
-							<p>price from: <strong> $ 299.99</strong> per weekend</p>
-
-							<div class="content">
-								<p>Elevate your travel with our Premium Experience. Tailored for those who desire the
-									ultimate in luxury and performance.</p>
-							</div>
-						</a>
-					</article>
-				</section>
-
-				<p class="text-center"><a href="offers.php">View Offers &nbsp;<i
-							class="fa fa-long-arrow-right"></i></a></p>
-
-				<br>
 
 				<h2 class="h2">Fleet</h2>
 
@@ -329,6 +270,13 @@ $isLoggedIn = displayLoginStatus();
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/login.js"></script>
+
+
+	<!-- Get User email -->			
+	<script>
+		var userEmail = "<?php echo $user_email; ?>";
+		localStorage.setItem('userEmail', userEmail);
+	</script>
 
 </body>
 

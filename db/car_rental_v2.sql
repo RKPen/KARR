@@ -401,15 +401,15 @@ CREATE TABLE `vehichleview` (
 
 CREATE TABLE `vehicle` (
   `Plate_Num` int(11) NOT NULL,
+  `Image_Path` varchar(255) NOT NULL,
   `Price` int(11) NOT NULL,
-  `Engine` varchar(45) NOT NULL,
   `Color` varchar(20) NOT NULL,
   `Gas_Type` varchar(15) NOT NULL,
   `Milage` int(11) NOT NULL DEFAULT 0,
-  `Available` binary(1) NOT NULL DEFAULT '1',
   `Brand` varchar(45) NOT NULL,
   `Model` varchar(45) NOT NULL,
   `Type` varchar(45) NOT NULL,
+  `InStock`  int(11) NOT NULL,
   `Year` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -417,34 +417,40 @@ CREATE TABLE `vehicle` (
 -- Dumping data for table `vehicle`
 --
 
-INSERT INTO `vehicle` (`Plate_Num`, `Price`, `Engine`, `Color`, `Gas_Type`, `Milage`, `Available`, `Brand`, `Model`, `Type`, `Year`) VALUES
-(12937, 599, '4.0 l twin-turbo V8', 'White', 'Gasoline', 12679, 0x30, 'Mercedes', 'G500', 'SUV', 2018),
-(15576, 900, 'twin-turbocharged 4.0-liter V-8', 'Maroon', 'Gasoline', 1547, 0x30, 'May Bach', 's680', 'Luxury', 2021),
-(66910, 850, 'OM473 inline 6', 'White', 'Diesel', 60350, 0x30, 'Mercedes', 'Actros', 'Semi', 2015),
-(110621, 299, '5.7-liter V-8', 'Blue', 'Diesel', 12560, 0x30, 'Toyota', 'Tacoma', 'Pickup', 2021),
-(123456, 400, 'Dual Motor AWD 100D', 'white', 'electric', 5687, 0x30, 'Tesla', 'Model x', 'SUV', 2021),
-(219057, 60, 'turbocharged 1.5-liter', 'Blue', 'Gasoline', 79011, 0x30, 'Honda ', 'Civic', 'Sedan', 2018),
-(252904, 1300, '6v92 Detroit', 'Grey', 'Diesel', 20245, 0x30, 'MCI', '96a2', 'Motor Home', 2015),
-(344667, 199, 'Dual Motor AWD P100D', 'Black', 'electric', 14678, 0x30, 'Tesla', 'Model 3', 'Sedan', 2020),
-(397883, 150, 'HEMI® V8', 'Red', 'Gasoline', 15452, 0x30, 'Jeep', 'Rubicon', 'SUV', 2020),
-(416776, 220, '649cc four cylinder', 'Red', 'Gasoline', 760, 0x30, 'Honda ', 'CB650R', 'Motorcycle', 2019),
-(473998, 229, '385-hp twin-turbo V-6', 'Red', 'Gasoline', 15989, 0x30, 'Mercedes', 'AMG C43', 'Sedan', 2020),
-(476766, 120, '399cc TWIN-CYLINDER', 'Green', 'Gasoline', 7659, 0x30, 'Kawasak', ' Ninja 400', 'Motorcycle', 2019),
-(544405, 250, 'MILWAUKEE-EIGHT 107', 'Black', 'Gasoline', 1500, 0x30, 'Harley-Davidson', 'Road King', 'Motorcycle', 2021),
-(564531, 4000, '4.0 L M840TR twin-turbocharged V8', 'Red', 'Gasoline', 560, 0x30, 'Mclaren', 'senna', 'Hyper', 2019),
-(567821, 99, 'Ford gasoline ', 'White', 'Gasoline', 30870, 0x30, 'Ford', 'F-53', 'Bus', 2018),
-(627299, 950, '4.0-litre M178 twin-turbocharged V8', 'Black', 'Gasoline', 7612, 0x30, 'Mercedes', 'AMG gt', 'Sport', 2020),
-(658513, 299, ' twin-turbo 3.5L EcoBoost V6', 'Black', 'Gasoline', 9345, 0x30, 'Ford', 'Raptor', 'Pickup', 2021),
-(663965, 300, 'turbocharged V-6', 'Black', 'Gasoline', 9678, 0x30, 'Audi', 'A7', 'Hatch Back', 2019),
-(742833, 1099, '3.0-litre turbocharged flat six engine', 'Red', 'Gasoline', 5476, 0x30, 'Porsche', '991', 'Sport', 2021),
-(802996, 249, '5.3L V8', 'Black', 'Gasoline', 22352, 0x30, 'Chevrolet', 'Tahoe', 'SUV', 2020),
-(819762, 80, '275-hp turbo-four', 'Green', 'Gasoline', 35467, 0x30, 'Hyundai ', 'Veloster', 'Hatch Back', 2019),
-(845119, 400, 'V 250 STANDARD', 'Black', 'Gasoline', 15045, 0x30, 'Mercedes', 'v-class', 'Mini van', 2019),
-(987651, 1400, '6.0 litre twin-turbocharged W12', 'Silver', 'Gasoline', 567, 0x30, 'Bentley', 'continental gt', 'Luxury', 2021);
+INSERT INTO `vehicle` (`Plate_Num`,`Image_Path`,`Price`, `Color`, `Gas_Type`, `Milage`, `Brand`, `Model`, `Type`,`InStock`,  `Year`) VALUES
+(12937,'product-1-720x480.jpg',90,'White', 'Gasoline', 12679, 'Volkswagen', 'Passat', 'Sedan',3, 2022),
+(110621,'product-2-720x480.jpg',150,  'Blue', 'Electric', 12560,  'Tesla', 'Model S', 'Sedan',2, 2018),
+(219057,'product-3-720x480.jpg', 140, 'Grey', 'Gasoline', 79011,  'BMW ', 'X5', 'SUV',3,2018),
+(252904,'product-4-720x480.jpg', 150, 'Silver', 'Gasoline', 20245,  'Mercedes', 'C300', 'Sedan',2,2022),
+(344667, 'product-5-720x480.jpg',100, 'Red', 'Gasoline', 14678, 'Honda', 'CRV', 'SUV',4, 2020),
+(416776,'product-6-720x480.jpg', 80,  'Red', 'Gasoline', 760,  'Kia', 'Rio', 'Hatchback',3, 2022),
+(476766,'product-7-720x480.jpg', 170,  'Black', 'Gasoline', 7659,  'LandRover', ' Evoque', 'SUV',2, 2021),
+(564531,'product-8-720x480.jpg', 300,  'Silver', 'Gasoline', 560, 'Porsche', '911', 'Supercar',1, 2019),
+(567821, 'product-9-720x480.jpg',450,  'Black', 'Gasoline', 300,  'Rolls Royce', 'Cullinan', 'Luxury',2,2018);
 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `booking`
+--
+
+CREATE TABLE `booking` (
+  `BOOK_ID` int(11) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `Email` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `Brand` varchar(255) NOT NULL,
+  `FromDate` date NOT NULL,
+  `Duration` int(11) NOT NULL,
+  `Phonenumber` bigint(20) NOT NULL,
+  `ToDate` date NOT NULL,
+  `Comment` varchar(255) NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+
+
+
 -- Stand-in structure for view `vehicle_in_carlot`
 -- (See below for the actual view)
 --
@@ -605,7 +611,21 @@ ALTER TABLE `vehicle`
   ADD PRIMARY KEY (`Plate_Num`);
 
 --
+-- Indexes for table `booking`
+--
+ALTER TABLE `booking`
+  ADD PRIMARY KEY (`BOOK_ID`),
+  ADD KEY `Email` (`Email`);
+
+--
+
 -- AUTO_INCREMENT for dumped tables
+--
+-- AUTO_INCREMENT for table `booking`
+--
+ALTER TABLE `booking`
+  MODIFY `BOOK_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+
 --
 
 --
@@ -617,6 +637,13 @@ ALTER TABLE `customer`
 --
 -- Constraints for dumped tables
 --
+-- Constraints for table `booking`
+--
+ALTER TABLE `booking`
+    ADD CONSTRAINT `booking_ibfk_2` FOREIGN KEY (`Email`) REFERENCES `customer` (`email`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+
 
 --
 -- Constraints for table `car_lot`

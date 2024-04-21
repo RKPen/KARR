@@ -12,14 +12,23 @@
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <script>
-        function validatePassword() {
+            function validatePassword() {
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirmPassword").value;
+            
+            // Check if password meets minimum length requirement
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false; // Prevent form submission
+            }
+
+            // Check if passwords match
             if (password != confirmPassword) {
                 alert("Passwords do not match.");
                 return false; // Prevent form submission
             }
-            return true;
+
+            return true; // Allow form submission
         }
     </script>
 </head>
@@ -57,7 +66,6 @@
 
                 <li><a href="signup.php">Signup</a></li>
 
-                <li><a href="offers.php">Offers</a></li>
 
                 <li>
                     <a href="#" class="dropdown-toggle">About</a>
@@ -69,6 +77,7 @@
                         <li><a href="faq.php">FAQ</a></li>
                         <li><a href="terms.php">Terms</a></li>
                         <li><a href="fleet.php">Fleet</a></li>
+                        <li><a href="mybooking.php">My Booking</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.php">Contact Us</a></li>

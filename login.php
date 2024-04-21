@@ -46,8 +46,6 @@
 
                 <li><a href="signup.php">Signup</a></li>
 
-                <li><a href="offers.php">Offers</a></li>
-
                 <li>
                     <a href="#" class="dropdown-toggle">About</a>
 
@@ -58,6 +56,7 @@
                         <li><a href="faq.php">FAQ</a></li>
                         <li><a href="terms.php">Terms</a></li>
                         <li><a href="fleet.php">Fleet</a></li>
+                        <li><a href="mybooking.php">My Booking</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.php">Contact Us</a></li>
