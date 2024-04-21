@@ -94,7 +94,7 @@ $isLoggedIn = displayLoginStatus();
 
 						<span class="image">
 
-							<img src="images/product-1-720x480.jpg" alt="" />
+							<img src="images/vw-720x480.jpg" alt="" />
 
 						</span>
 
@@ -116,7 +116,7 @@ $isLoggedIn = displayLoginStatus();
 
 						<span class="image">
 
-							<img src="images/product-2-720x480.jpg" alt="" />
+							<img src="images/tesla-720x480.jpg" alt="" />
 
 						</span>
 
@@ -138,7 +138,7 @@ $isLoggedIn = displayLoginStatus();
 
 						<span class="image">
 
-							<img src="images/product-3-720x480.jpg" alt="" />
+							<img src="images/bmw-720x480.jpg" alt="" />
 
 						</span>
 
@@ -160,7 +160,7 @@ $isLoggedIn = displayLoginStatus();
 
 						<span class="image">
 
-							<img src="images/product-4-720x480.jpg" alt="" />
+							<img src="images/mercedes-720x480.jpg" alt="" />
 
 						</span>
 
@@ -182,7 +182,7 @@ $isLoggedIn = displayLoginStatus();
 
 						<span class="image">
 
-							<img src="images/product-5-720x480.jpg" alt="" />
+							<img src="images/honda-720x480.jpg" alt="" />
 
 						</span>
 
@@ -204,7 +204,7 @@ $isLoggedIn = displayLoginStatus();
 
 						<span class="image">
 
-							<img src="images/product-6-720x480.jpg" alt="" />
+							<img src="images/kia-720x480.jpg" alt="" />
 
 						</span>
 
