@@ -127,12 +127,6 @@ $isLoggedIn = displayLoginStatus();
 
 							<p>Check Available Models</p>
 
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
 						</a>
 					</article>
 					<article class="style5">
@@ -144,12 +138,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<p>Check Available Models</p>
 
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
+				
 						</a>
 					</article>
 					<article class="style6">
@@ -161,12 +150,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<p>Check Available Models</p>
 
-							<p>
-								<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-								<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-								<i class="fa fa-cog"></i> A
-							</p>
+						
 						</a>
 					</article>
 				</section>
