@@ -102,7 +102,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Volkswagen</h2>
 
-
+							<p>Passat</p>
 
 							<p>price from: <strong> $ 90.00</strong> per weekend</p>
 
@@ -124,7 +124,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Tesla</h2>
 
-
+							<p>Model S</p>
 
 							<p>price from: <strong> $ 150.00</strong> per weekend</p>
 
@@ -146,7 +146,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>BMW</h2>
 
-
+							<p>BMW X5</p>
 
 							<p>price from: <strong> $ 140.00</strong> per weekend</p>
 
@@ -168,7 +168,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Mercedes</h2>
 
-
+							<p>C 300</p>
 
 							<p>price from: <strong> $ 150.00</strong> per weekend</p>
 
@@ -190,7 +190,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Honda</h2>
 
-
+							<p>CRV</p>
 
 							<p>price from: <strong> $ 100.00</strong> per weekend</p>
 
@@ -212,7 +212,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Kia</h2>
 
-
+							<p>Rio</p>
 
 							<p>price from: <strong> $ 80.00</strong> per weekend</p>
 
@@ -234,7 +234,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Landrover</h2>
 
-
+							<p>Evoque</p>
 
 							<p>price from: <strong> $ 170.00</strong> per weekend</p>
 
@@ -256,7 +256,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Porsche</h2>
 
-
+							<p>911</p>
 
 							<p>price from: <strong> $ 300.00</strong> per weekend</p>
 
@@ -278,7 +278,7 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2>Rolls Royce</h2>
 
-
+							<p>Cullinan</p>
 
 							<p>price from: <strong> $ 450.00</strong> per weekend</p>
 
@@ -369,21 +369,13 @@ $isLoggedIn = displayLoginStatus();
 
 
 							<div class="field half">
-
-								<input type="datetime-local" name="date-from" id="date-from"
-
-									placeholder="Pick-up date/time" required />
-
+								<label for="date-from">Pick-up Date:</label>
+								<input type="datetime-local" name="date-from" id="date-from" required />
 							</div>
 
-
-
 							<div class="field half">
-
-								<input type="datetime-local" name="date-to"  id="date-to" 
-
-									placeholder="Return date/time" required />
-
+								<label for="date-to">Return Date:</label>
+								<input type="datetime-local" name="date-to" id="date-to" required />
 							</div>
 
 
