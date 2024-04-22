@@ -100,7 +100,7 @@ $isLoggedIn = displayLoginStatus();
 						</div>
 
 						<div class="col-sm-3 text-center">
-							<img src="images/karim.jpg" class="img-fluid" alt="" />
+							<img src="images/karim5.jpg" class="img-fluid" alt="" />
 
 							<h2 class="m-n">karim Maamari</h2>
 
@@ -126,7 +126,7 @@ $isLoggedIn = displayLoginStatus();
 						</div>
 
 						<div class="col-sm-3 text-center">
-							<img src="images/author-image-4-646x680.jpg" class="img-fluid" alt="" />
+							<img src="images/anthony2.jpg" class="img-fluid" alt="" />
 
 							<h2 class="m-n">Anthony Sarkis</h2>
 
