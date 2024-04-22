@@ -91,12 +91,6 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2 class="m-n">Roy Yammine</h2>
 
-							<p>
-								<br>
-
-								<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-							</p>
 						</div>
 
 						<div class="col-sm-3 text-center">
@@ -104,25 +98,12 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2 class="m-n">karim Maamari</h2>
 
-							<p>
-								<br>
-
-								<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-							</p>
 						</div>
 
 						<div class="col-sm-3 text-center">
 							<img src="images/riad2.jpg" class="img-fluid" alt="" />
 
 							<h2 class="m-n">Riad El Zaylaa</h2>
-
-							<p>
-								<br>
-
-								<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-							</p>
 						</div>
 
 						<div class="col-sm-3 text-center">
@@ -130,12 +111,6 @@ $isLoggedIn = displayLoginStatus();
 
 							<h2 class="m-n">Anthony Sarkis</h2>
 
-							<p>
-								<br>
-
-								<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-							</p>
 						</div>
 					</div>
 				</div>
