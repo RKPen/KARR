@@ -402,23 +402,24 @@ $isLoggedIn = displayLoginStatus();
 
 								<textarea name="message" id="message" rows="3" placeholder="Comment"></textarea>
 
-							</div>
+								</div>
+
+									<?php if($isLoggedIn) { ?>
+										<div class="field text-right">
+											<label>&nbsp;</label>
+											<button type="S-submit"  name="book">Book Now</button>
+										</div>
+									<?php } else { ?>
+										<div class="field text-right">
+											<p class="login-message"><strong>Please <a href="login.php">Login</a> to book a vehicle</strong></p>
+										</div>
+									<?php } ?>
+
+								</div>
 
 
 
-							<?php if($isLoggedIn)
 
-              {?><div class="field text-right">
-
-								<label>&nbsp;</label>
-
-
-
-								<button type="S-submit"  name="book">Book Now</button>
-
-							</div><?php }?>
-
-						</div>
 
 					</form>
 
