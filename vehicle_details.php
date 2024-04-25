@@ -109,25 +109,26 @@ if (isset($_GET['Brand'])) {
 
                 <!-- Main -->
                 <div id="main">
-                    <div class="inner">
-                        <h1>Vehicle Details</h1>
-                        <img src="https://karrrental.com/images/<?php echo $vehicle_row['Image_Path']; ?>" alt="Vehicle Image" width="300" height="200">
-                        <p>Plate Number: <?php echo $vehicle_row['Plate_Num']; ?></p>
-                        <p>Total Price for <?php echo $duration; ?> Days: $<?php echo $total_price; ?></p>
-                        <p>Color: <?php echo $vehicle_row['Color']; ?></p>
-                        <p>Gas Type: <?php echo $vehicle_row['Gas_Type']; ?></p>
-                        <p>Mileage: <?php echo $vehicle_row['Milage']; ?>KM</p>
-                        <p>Brand: <?php echo $vehicle_row['Brand']; ?></p>
-                        <p>Model: <?php echo $vehicle_row['Model']; ?></p>
-                        <p>Type: <?php echo $vehicle_row['Type']; ?></p>
-                        <p>Year: <?php echo $vehicle_row['Year']; ?></p>
-                       
-                        
-
-
-
-
-                        <a href="mybooking.php">Back to My Booking</a>
+                     <div class="vehicle-details" style="background-color: #fff; border: 2px solid #000; padding: 20px; max-width: 600px; margin: 0 auto;">
+                        <h2 style="font-size: 24px; margin-bottom: 10px; text-align: center;">Vehicle Details</h2>
+        
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <img src="https://karrrental.com/images/<?php echo $vehicle_row['Image_Path']; ?>" alt="Vehicle Image" width="400" height="300" style="border: 2px solid #000; border-radius: 5px;">
+                        </div>
+                    
+                        <p style="margin: 5px 0;"><strong>Plate Number:</strong> <?php echo $vehicle_row['Plate_Num']; ?></p>
+                        <p style="margin: 5px 0;"><strong>Total Price for <?php echo $duration; ?> Days:</strong> $<?php echo $total_price; ?></p>
+                        <p style="margin: 5px 0;"><strong>Color:</strong> <?php echo $vehicle_row['Color']; ?></p>
+                        <p style="margin: 5px 0;"><strong>Gas Type:</strong> <?php echo $vehicle_row['Gas_Type']; ?></p>
+                        <p style="margin: 5px 0;"><strong>Mileage:</strong> <?php echo $vehicle_row['Milage']; ?>KM</p>
+                        <p style="margin: 5px 0;"><strong>Brand:</strong> <?php echo $vehicle_row['Brand']; ?></p>
+                        <p style="margin: 5px 0;"><strong>Model:</strong> <?php echo $vehicle_row['Model']; ?></p>
+                        <p style="margin: 5px 0;"><strong>Type:</strong> <?php echo $vehicle_row['Type']; ?></p>
+                        <p style="margin: 5px 0;"><strong>Year:</strong> <?php echo $vehicle_row['Year']; ?></p>
+                    
+                        <p style="text-align: center; margin-top: 20px;">
+                            <a href="mybooking.php" style="color: #007bff; text-decoration: none;">Back to My Booking</a>
+                        </p>
                     </div>
                 </div>
 
