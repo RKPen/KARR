@@ -121,7 +121,7 @@ if (isset($_GET['Brand'])) {
                         <p>Model: <?php echo $vehicle_row['Model']; ?></p>
                         <p>Type: <?php echo $vehicle_row['Type']; ?></p>
                         <p>Year: <?php echo $vehicle_row['Year']; ?></p>
-                        <!-- Display the vehicle image -->
+                       
                         
 
 
